@@ -18,7 +18,7 @@ export default {
     prompt: `For each scene in this video, generate captions that describe the \
     scene along with any spoken text placed in quotation marks. Place each \
     caption into an object sent to set_timecodes with the timecode of the caption \
-    in the video.`,
+    in the video. Respond it in Spanish`,
     isList: true
   },
 
@@ -26,13 +26,13 @@ export default {
     emoji: '📝',
     prompt: `Generate a paragraph that summarizes this video. Keep it to 3 to 5 \
 sentences. Place each sentence of the summary into an object sent to \
-set_timecodes with the timecode of the sentence in the video.`
+set_timecodes with the timecode of the sentence in the video. Respond it in Spanish`
   },
 
   'Key moments': {
     emoji: '🔑',
     prompt: `Generate bullet points for the video. Place each bullet point into an \
-object sent to set_timecodes with the timecode of the bullet point in the video.`,
+object sent to set_timecodes with the timecode of the bullet point in the video. Respond it in Spanish`,
     isList: true
   },
 
@@ -40,14 +40,14 @@ object sent to set_timecodes with the timecode of the bullet point in the video.
     emoji: '🤓',
     prompt: `Choose 5 key shots from this video and call set_timecodes_with_objects \
 with the timecode, text description of 10 words or less, and a list of objects \
-visible in the scene (with representative emojis).`
+visible in the scene (with representative emojis). Respond it in Spanish`
   },
 
   Haiku: {
     emoji: '🌸',
     prompt: `Generate a haiku for the video. Place each line of the haiku into an \
 object sent to set_timecodes with the timecode of the line in the video. Make sure \
-to follow the syllable count rules (5-7-5).`
+to follow the syllable count rules (5-7-5). Respond it in Spanish`
   },
 
   Chart: {
