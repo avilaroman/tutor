@@ -77,7 +77,7 @@ export default function App() {
     applet
       .init({
         systemInstructions: `When given a video and a query, call the relevant \
-function only once with the appropriate timecodes and text for the video`,
+function only once with the appropriate timecodes and text for the video, say everything in Spanish`,
         functionDeclarations: functions({
           set_timecodes: setTimecodes,
           set_timecodes_with_objects: setTimecodes,
@@ -111,7 +111,7 @@ function only once with the appropriate timecodes and text for the video`,
                       <>
                         <h2>Custom prompt:</h2>
                         <textarea
-                          placeholder="Type a custom prompt..."
+                          placeholder="Escribe tu Consulta al Tutor..."
                           value={customPrompt}
                           onChange={e => setCustomPrompt(e.target.value)}
                           onKeyDown={e => {
@@ -125,7 +125,7 @@ function only once with the appropriate timecodes and text for the video`,
                       </>
                     ) : (
                       <>
-                        <h2>Chart this video by:</h2>
+                        <h2>Cuadro Comparativo:</h2>
 
                         <div className="modeList">
                           {chartModes.map(mode => (
@@ -181,7 +181,7 @@ function only once with the appropriate timecodes and text for the video`,
               ) : (
                 <>
                   <div>
-                    <h2>Explore this video via:</h2>
+                    <h2>Explora este video via:</h2>
                     <div className="modeList">
                       {Object.entries(modes).map(([mode, {emoji}]) => (
                         <button
@@ -213,7 +213,7 @@ function only once with the appropriate timecodes and text for the video`,
                       className="button generateButton"
                       onClick={() => onModeSelect(selectedMode)}
                     >
-                      ▶️ Generate
+                      ▶️ Generar
                     </button>
                   </div>
                 </>
