@@ -176,11 +176,10 @@ export default function VideoPlayer({
         <div className="emptyVideo">
           <p>
             {isLoadingVideo ? (
-              'Loading video...'
+              'Cargando el video...'
             ) : (
               <>
-                <span>👈</span> Add a video by clicking the ⨁ button in the chat
-                input on the bottom left.
+                <span>👈</span> Agrega un video clickeando en el botón ⨁ en el cuadro de texto del chat abajo a la izq.
               </>
             )}
           </p>
